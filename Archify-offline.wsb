@@ -1,0 +1,32 @@
+<Configuration>
+  <Networking>Disable</Networking>
+  <ClipboardRedirection>Disable</ClipboardRedirection>
+  <AudioInput>Disable</AudioInput>
+  <VideoInput>Disable</VideoInput>
+  <PrinterRedirection>Disable</PrinterRedirection>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>D:\Download\Archify\archify\archify</HostFolder>
+      <SandboxFolder>C:\Archify</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>D:\Program Files\nodejs</HostFolder>
+      <SandboxFolder>C:\Node</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>D:\Download\Archify\archify\offline-input</HostFolder>
+      <SandboxFolder>C:\Input</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>D:\Download\Archify\archify\offline-output</HostFolder>
+      <SandboxFolder>C:\Output</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <LogonCommand>
+    <Command>cmd.exe /K "cd /d C:\Output &amp;&amp; set PATH=C:\Node;%PATH% &amp;&amp; if not exist example.html C:\Node\node.exe C:\Archify\bin\archify.mjs deliver architecture C:\Archify\examples\web-app.architecture.json example.html"</Command>
+  </LogonCommand>
+</Configuration>

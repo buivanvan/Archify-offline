@@ -1,0 +1,19 @@
+.DS_Store
+.harnessed/
+node_modules/
+.wrangler/
+.claude/
+.lore/
+/.impeccable/
+
+# Local analysis outputs and validator test scratch directories
+/archify/out/
+/out/
+/archify/.validator-check-*/
+__pycache__/
+*.py[cod]
+
+/offline-input/*
+!/offline-input/.gitkeep
+/offline-output/*
+!/offline-output/.gitkeep
