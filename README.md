@@ -1,3 +1,6 @@
+# Archify for AI Agent of TT-A1I version offline, don't communication with internet
+# Original repo: https://github.com/tt-a1i/archify.git
+
 **Offline Windows build.** Open [Archify-offline.wsb](Archify-offline.wsb) with Windows Sandbox enabled. Put inputs in `offline-input` and write results to `C:\Output` inside the sandbox. Use the local Node CLI. The upstream online installation instructions below apply to the original distribution.
 
 <p align="center">
